@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, :find_login_user, :new_book
   before_action :correct_user, only: [:edit, :update]
 
   def index
